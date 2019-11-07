@@ -1,9 +1,16 @@
 
 package projeto.tc;
 
-public class ProjetoTC {
+import java.io.IOException;
 
-    public static void main(String[] args) {
+public class ProjetoTC {
+    
+    public static void main(String[] args) throws IOException {
+        String path = "/tmp/file.txt";
+        
+        ManipuladorArquivo.escritor(path);
+        ManipuladorArquivo.leitor(path);
+        
         String x  = null;
         String y = null;
         
